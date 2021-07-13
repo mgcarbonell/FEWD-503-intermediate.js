@@ -114,3 +114,18 @@ function wakeUp(time) {
 // If the number is a multiple of 3 AND 5 I want you to log "Fizz Buzz"
 // Do not log "Fizz" "Buzz" I want "Fizz Buzz"
 
+function fizzBuzz(start, end) {
+  for (let i = start; i <= end; i++) {
+    if (i % 5 === 0 && i % 3 === 0) {
+      console.log("Fizz Buzz")
+    } else if (i % 3 === 0) {
+      console.log("Fizz")
+    } else if (i % 2 === 0) {
+      console.log("Buzz")
+    } else {
+      console.log(i)
+    }
+  }
+}
+
+console.log(fizzBuzz(1, 100))
